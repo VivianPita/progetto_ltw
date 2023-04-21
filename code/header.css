@@ -22,6 +22,7 @@ header{
     padding-left: 20px;
     height: 70px;
     margin-right: 20px;
+    border-radius: 50%;
 }
 
 nav a{
