@@ -1,5 +1,6 @@
 :root{
     --green: green;
+    --orange: orange;
 }
 
 *{
@@ -27,16 +28,17 @@ header{
     left: 0;
     right: 0;
     background: bisque;
-    padding: 2rem 9%;
+    padding: 2rem ;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
+    box-shadow: 0 0.5rem 1rem green;
 }
 
 header .logo{
-    font-size: 3rem;
+    padding-right:300px;
+    font-size: 2.5rem;
     color: green;
     font-weight: bolder;
 }
@@ -49,6 +51,83 @@ header .img{
 }
 
 header .navbar a{
+    margin:0;
+    font-weight: bolder;
     color:var(--green);
+    font-size: 2rem;
+    padding-left: 70px;
+    
 }
 
+header .navbar a:hover{
+    color: var(--orange);
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color: green;
+    padding-right: 50px;
+    /*margin-left: 1.5rem;*/
+}
+
+header .icons a:hover{
+    color: var(--orange);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color:var(--green);
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid green;
+    display: none;
+}
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px){
+    html .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: bisque;
+        border-top: .1rem solid green;
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5 rem;
+        background: bisque;
+        border: .1rem solid green;
+        display: block;
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+}
