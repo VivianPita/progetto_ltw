@@ -1,5 +1,5 @@
 :root{
-    --green: #66ff00;
+    --green: green;
 }
 
 *{
@@ -39,5 +39,16 @@ header .logo{
     font-size: 3rem;
     color: green;
     font-weight: bolder;
+}
+
+header .img{
+    padding-left: 0px;
+    height: 70px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+header .navbar a{
+    color:var(--green);
 }
 
