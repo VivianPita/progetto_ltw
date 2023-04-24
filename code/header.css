@@ -97,7 +97,7 @@ header .fa-bars{
     }
 }
 
-@media (max-width:768px){
+@media (max-width:800px){
     html .fa-bars{
         display: block;
     }
@@ -125,7 +125,7 @@ header .fa-bars{
     }
 }
 
-@media (max-width:414px){
+@media (max-width:450px){
     html{
         font-size: 50%;
     }
