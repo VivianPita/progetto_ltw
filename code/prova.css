@@ -1,6 +1,7 @@
 :root{
     --green: green;
     --orange: orange;
+    --beige: blanchedalmond;
 }
 
 *{
@@ -25,6 +26,21 @@ html{
 section{
     padding:2rem 9%;
 }
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color:var(--green);
+    padding:1rem;
+    margin: 2rem 0;
+    background: var(--beige);
+}
+
+/*.heading span{
+    color: var(--orange);
+}*/
+
+
 
 section .btn{
     display: inline-block;
@@ -234,6 +250,10 @@ header .fa-bars{
     html{
         font-size: 50%;
     }
+
+    .heading{
+        font-size: 3rem;
+    }
 }
 
 .home{
@@ -376,3 +396,56 @@ header .fa-bars{
     padding:1rem 0;
     line-height: 1.5;
 }
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.about .row .video-container{
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.about .row .video-container img{
+    width: 100%;
+    border: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem var(--green);
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .row .video-container h3{
+    position: absolute;
+    top:85%; transform: translateY(-50%);
+    font-size: 3rem;
+    color:black;
+    background: var(--orange);
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.about .row .content{
+    flex: 1 1 40rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color:var(--green);
+}
+
+.about .row .content p{
+    font-size: 1.5rem;
+    color:var(--orange);
+    padding: .5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+

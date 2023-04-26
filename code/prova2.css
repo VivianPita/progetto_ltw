@@ -13,7 +13,7 @@
     border: none;
     text-decoration: none;
     text-transform: capitalize;
-    /*transition: .2s linear;*/
+    transition: .2s linear;
 }
 
 html{
@@ -34,10 +34,6 @@ section{
     padding:1rem;
     margin: 2rem 0;
     background: var(--beige);
-}
-
-.about{
-    margin-top: 120px;
 }
 
 /*.heading span{
@@ -113,7 +109,7 @@ section .btn:hover{
 .about .row .video-container img{
     width: 100%;
     border: 1.5rem;
-    border-radius: 50%;
+    border-radius: .5rem;
     box-shadow: 0 .5rem 1rem var(--green);
     height: 100%;
     object-fit: cover;
