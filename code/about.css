@@ -58,7 +58,7 @@ section .btn{
 }
 
 section .btn:hover{
-    background:yellow;
+    background:yellowgreen;
 }
 
 
@@ -124,7 +124,7 @@ section .btn:hover{
     top:85%; transform: translateY(-50%);
     font-size: 3rem;
     color:black;
-    background: var(--orange);
+    
     width: 100%;
     padding: 1rem 2rem;
     text-align: center;

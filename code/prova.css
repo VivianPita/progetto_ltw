@@ -13,7 +13,6 @@
     border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: .2s linear;
 }
 
 html{
@@ -569,5 +568,22 @@ header .fa-bars{
 .footer .box-container .box a:hover{
     color: var(--orange);
     text-decoration: underline;
-    
+}
+
+.footer .box-container .box img{
+    margin-top: 1rem;
+}
+
+.footer .credit{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: var(--green);
+    border-top: .1rem solid var(--orange);
+}
+
+.footer .credit span{
+    color: var(--orange);
 }
