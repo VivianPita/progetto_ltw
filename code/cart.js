@@ -41,9 +41,9 @@ let generateCartItems = () => {
   } else {
     ShoppingCart.innerHTML = ``;
     label.innerHTML = `
-    <h2>Cart is Empty</h2>
+    <h2>Il Carrello è vuoto</h2>
     <a href="shop.html">
-      <button class="HomeBtn">Back to shop</button>
+      <button class="HomeBtn">Ritorna allo Shop</button>
     </a>
     `;
   }
@@ -118,9 +118,9 @@ let TotalAmount = () => {
       .reduce((x, y) => x + y, 0);
     // console.log(amount);
     label.innerHTML = `
-    <h2>Total Bill : $ ${amount}</h2>
+    <h2>Prezzo Totale : $ ${amount}</h2>
     <button class="checkout">Checkout</button>
-    <button onclick="clearCart()" class="removeAll">Clear Cart</button>
+    <button onclick="clearCart()" class="removeAll">Svuota Carrello</button>
     `;
   } else return;
 };
