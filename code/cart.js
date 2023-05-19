@@ -1,5 +1,6 @@
-let label = document.getElementById("label");
+
 let ShoppingCart = document.getElementById("shopping-cart");
+let label = document.getElementById("label");
 
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
@@ -16,6 +17,7 @@ let generateCartItems = () => {
       .map((x) => {
         let { id, item } = x;
         let search = shopItemsData.find((y) => y.id === id) || [];
+        let { img, price, name } = search;
         return `
       <div class="cart-item">
         <img width="100" src=${search.img} alt="" />
@@ -39,7 +41,7 @@ let generateCartItems = () => {
       })
       .join(""));
   } else {
-    ShoppingCart.innerHTML = ``;
+    ShoppingCart.innerHTML = "";
     label.innerHTML = `
     <h2>Il Carrello è vuoto</h2>
     <a href="shop.html">
@@ -103,6 +105,7 @@ let removeItem = (id) => {
 let clearCart = () => {
   basket = [];
   generateCartItems();
+  calculation();
   localStorage.setItem("data", JSON.stringify(basket));
 };
 
