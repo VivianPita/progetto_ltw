@@ -44,9 +44,9 @@ section{
     color: var(--orange);
 }*/
 
+#more {display: none;}
 
-
-section .btn{
+section .content button{
     display: inline-block;
     margin-top: 1rem;
     border-radius: 5rem;
@@ -133,6 +133,7 @@ section .btn:hover{
 
 .about .row .content{
     flex: 1 1 40rem;
+    padding-left: 6rem;
 }
 
 .about .row .content h3{
