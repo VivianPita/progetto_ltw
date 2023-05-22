@@ -24,7 +24,7 @@ let generateCartItems = () => {
         <div class="details">
           <div class="title-price-x">
               <h4 class="title-price">
-                <p>${search.name}</p>
+                <p>${name}</p>
                 
               </h4>
               <i onclick="removeItem(${id})" class="bi bi-x-lg"></i>
@@ -97,6 +97,7 @@ let removeItem = (id) => {
   let selectedItem = id;
   // console.log(selectedItem.id);
   basket = basket.filter((x) => x.id !== selectedItem.id);
+  calculation();
   generateCartItems();
   TotalAmount();
   localStorage.setItem("data", JSON.stringify(basket));
