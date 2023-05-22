@@ -149,6 +149,8 @@ section .btn:hover{
     background-color: white;
     background-size: cover;
     background-position: center;
+    background-image: url("shop.jpeg");
+    background-size: 100% 100%;
 }
 
 .home .content h3{
@@ -205,6 +207,7 @@ section .btn:hover{
     background-color: white;
     background-size: cover;
     background-position: center;
+
 }
 
 .home2 .content h3{
@@ -230,9 +233,11 @@ section .btn:hover{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background-color: blanchedalmond;
+    background-color: white;
     background-size: cover;
     background-position: center;
+    background-image: url("animali.jpeg");
+    background-size: 100% 100%;
 }
 
 .home3 .content h3{
@@ -258,9 +263,10 @@ section .btn:hover{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background-color: white;
+    background-color: blanchedalmond;
     background-size: cover;
     background-position: center;
+
 }
 
 .home4 .content h3{
