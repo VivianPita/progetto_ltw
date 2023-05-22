@@ -55,13 +55,23 @@ background:yellow;
 **/
 
 
+.titolo{
+  margin-top: 150px;
+}
+.titolo h3{
+  color: var(--orange);
+  font-family: sans-serif;
+  font-size: 5rem;
+  text-align: center;
+}
+
 .shop {
   display: grid;
   font-family: sans-serif;
   grid-template-columns: repeat(4, 223px);
   gap: 30px;
   justify-content: center;
-  margin-top: 140px;
+  margin-top: 40px;
 }
 
 @media (max-width: 1000px) {
