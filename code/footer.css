@@ -26,6 +26,10 @@ section{
     padding:2rem 9%;
 }
 
+.footer{
+    margin-top: 150px;
+}
+
 .footer .box-container{
     border-top: .1rem solid var(--orange);
     display: flex;
