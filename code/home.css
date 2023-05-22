@@ -287,3 +287,34 @@ section .btn:hover{
     padding:1rem 0;
     line-height: 1.5;
 }
+
+i{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background: orange;
+    padding: 25px;
+    color: green;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease;
+    animation: animate 1.5s infinite;
+    border-radius: 50%;
+    font-size: 2.5rem;
+}
+
+i:hover{
+    transition: .5s;
+    color: yellowgreen;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(15px);
+    }
+}
+
