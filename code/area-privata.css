@@ -1,0 +1,127 @@
+:root{
+    --green: green;
+    --orange: orange;
+    --beige: blanchedalmond;
+    --white: #eae6ca;
+  }
+  
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding:2rem 9%;
+}
+
+
+.area-privata{
+    display: flex;
+    min-height: 100vh;
+    background : linear-gradient(90deg, var(--white) 60%, var(--beige) 40.1%);
+    flex-direction: column;
+	justify-content: center;
+    align-items: center;
+    color: #fff;
+	height: 100vh;
+}
+
+
+
+.area-privata .content span{
+    font-size: 2.5rem;
+    color:var(--orange);
+    padding:1rem 0;
+    line-height: 1.5;
+}
+
+.area-privata .content p{
+    font-size: 1.5rem;
+    color:var(--green);
+    padding:1rem 0;
+    line-height: 1.5;
+}
+
+.area-privata{
+    margin-top: 50px;
+    
+}
+
+form {
+    justify-content: center;
+	width: 90%;
+    max-width: 400px;
+	border: 2px solid #ccc;
+	padding: 30px;
+	background: #fff;
+	border-radius: 15px;
+    margin: 0 auto;
+}
+.saluti{
+    font-size: 3rem;
+	text-align: center;
+	margin-bottom: 20px;
+    color: #9a9a9a
+}
+h1 {
+    font-size: 4rem;
+	text-align: center;
+	margin-bottom: 30px;
+    color:var(--orange);
+}
+
+input{
+    width: 100%;
+    font-size: 18px;
+	background: var(--beige);
+	padding: 10px 15px;
+	color: var(--green);
+	border-radius: 5px;
+	border: none;
+}
+button:hover{
+	opacity: .7;
+}
+
+i{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background: orange;
+    padding: 25px;
+    color: green;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease;
+    animation: animate 1.5s infinite;
+    border-radius: 50%;
+    font-size: 2.5rem;
+}
+
+i:hover{
+    transition: .5s;
+    color: yellowgreen;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(15px);
+    }
+}
