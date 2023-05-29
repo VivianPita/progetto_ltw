@@ -123,8 +123,7 @@ let TotalAmount = () => {
     // console.log(amount);
     label.innerHTML = `
     <h2>Prezzo Totale : $ ${amount}</h2>
-    <button class="checkout">Checkout</button>
-    <a href="#" class="btn">prenota ora</a>
+    <a href='card.php'><button class="checkout">Checkout</button></a>
     <button onclick="clearCart()" class="removeAll">Svuota Carrello</button>
     `;
   } else return;
