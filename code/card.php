@@ -54,7 +54,7 @@ if(!isset($_SESSION['loggato']) || $_SESSION['loggato'] !== true){
                     </div>
                     <div class="inputBox">
                         <span>CAP :</span>
-                        <input type="number" name="cap" placeholder="" required>
+                        <input type="text" name="cap" placeholder="00000" required>
                     </div>
                 </div>
 
@@ -96,14 +96,17 @@ if(!isset($_SESSION['loggato']) || $_SESSION['loggato'] !== true){
         
         <button type="submit" class="submit-btn" value="invia">invia</button>
 
-
+        <script src="card.js"></script>
         <script>
 
             $('.submit-btn').click(() => {
+                
                 localStorage.clear()
             });
+            
 
         </script>
+        
     </form>
 
 </div>    
