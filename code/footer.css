@@ -44,6 +44,7 @@ section{
     color: var(--green);
     font-size: 2.5rem;
     padding: 1rem 0;
+    text-transform: capitalize;
 }
 
 .footer .box-container .box a{
@@ -51,6 +52,7 @@ section{
     color: var(--orange);
     font-size: 1.5rem;
     padding: 1rem 0;
+    text-transform: capitalize;
 }
 
 .footer .box-container .box a:hover{
