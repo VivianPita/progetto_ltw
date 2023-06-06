@@ -14,6 +14,8 @@
     <link rel="stylesheet" type="text/css" href="shop.css">
 </head>
 <body>
+  <!--  header gestito con un menu nascosto che appare in base ad una media query, un logo e una navbar con un icona del carrello -->
+
   <header>
     <input type="checkbox" name="" id="toggler">
 
@@ -32,7 +34,6 @@
   </nav>
 
     <div class="icons">
-      <!--<a href="log.php" class="fas fa-user"></a>-->
       <a href="cart.html" class="fas fa-shopping-cart"></a>
           <div class="cart">
           
@@ -47,8 +48,9 @@
 <div class="titolo" id="titolo">
   <h3>I Nostri Servizi</h3>
 </div>
-
+<!-- sezione servizi dove abbiamo i nostri tre servizi all'interno della section servizi-->
 <div class="servizi" id="servizi">
+  <!-- servizio di check-up-->
   <form action="checkup.php">
     <div id="service-id-checkup" class="item">
       <img width="210" hight="210" src="immagini/checkup.jpg" alt="">
@@ -64,7 +66,7 @@
       </div>
     </div>
   </form>
-  
+  <!-- servizio di vaccinazione-->
   <form action="vaccinazione.php">
     <div id="service-id-vaccinazione" class="item">
       <img width="210" hight="210" src="immagini/vaccinazione.jpg" alt="">
@@ -80,7 +82,7 @@
       </div>
     </div>
   </form>
-
+<!-- servizio di toeletta-->
   <form action="toeletta.php">
     <div id="service-id-toeletta" class="item">
       <img width="210"  hight="210" src="immagini/toeletta.jpg" alt="">
@@ -97,6 +99,8 @@
     </div>
   </form>
 </div>
+
+<!-- footer gestito con un box container e 3 box  -->
 
 <section class="footer">
 
@@ -136,24 +140,6 @@
   <div class="credit">created by <span> Pita&Proietti_Dev. Designer</span> all rights reserved</div>
 </section>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $(window).scroll(function(){
-        if($(window).scrollTop()>300){
-          $('i').css({
-            "opacity":"1","pointer-events":"auto"
-          });
-        }else{
-          $('i').css({
-            "opacity":0,"pointer-events":"none"
-          });
-        }
-    });
-     $('i').click(function(){
-      $('html').animate({scrollTop:0},500);
-     });
-    });
   </script>
   <script src="Data.js"></script>
   <script src="cart.js"></script>

@@ -3,6 +3,7 @@ let shop = document.getElementById("shop");
 
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
+//Funzione per generare lo shop nella pagina shop
 let generateShop = () => {
   return (shop.innerHTML = shopItemsData
     .map((x) => {
@@ -30,9 +31,10 @@ let generateShop = () => {
     })
     .join(""));
 };
-
+//invoco la funzione definita prima
 generateShop();
 
+//Funzione per incrementare il numero di un particolare prodotto visualizzato poi nel carrello
 let increment = (id) => {
   let selectedItem = id;
   let search = basket.find((x) => x.id === selectedItem.id);
@@ -45,11 +47,11 @@ let increment = (id) => {
   } else {
     search.item += 1;
   }
-
-  // console.log(basket);
   update(selectedItem.id);
   localStorage.setItem("data", JSON.stringify(basket));
 };
+
+//Funzione per decrementare il numero di un particolare prodotto visualizzato poi nel carrello
 let decrement = (id) => {
   let selectedItem = id;
   let search = basket.find((x) => x.id === selectedItem.id);
@@ -61,19 +63,20 @@ let decrement = (id) => {
   }
   update(selectedItem.id);
   basket = basket.filter((x) => x.item !== 0);
-  // console.log(basket);
   localStorage.setItem("data", JSON.stringify(basket));
 };
+
+//Funzione per aggiornare il numero di un particolare prodotto dopo una modifica
 let update = (id) => {
   let search = basket.find((x) => x.id === id);
-  // console.log(search.item);
   document.getElementById(id).innerHTML = search.item;
   calculation();
 };
 
+//Funzione per calcolare il numero di un particolare prodotto visualizzato poi nel carrello
 let calculation = () => {
   let cartIcon = document.getElementById("cartAmount");
   cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
 };
-
+//invoco la funzione definita prima
 calculation();

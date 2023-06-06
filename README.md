@@ -47,7 +47,7 @@ Il resto dei file che si vedono nella cartella sono i file HTML,CSS,PHP e JavaSc
 - about.css : definiamo lo stile della pagina di about us
 - area-privata.css : definiamo lo stile della pagina dell'area privata una volta fatto l'accesso
 - card.css : definiamo lo stile della pagina del checkout
-- checkup.css : definiamo lo stile della pagina di prenotazione della visita
+- checkup.css : definiamo lo stile della pagina che si apre per prenotare il servizio vaccinazione
 - conferma.css : definiamo lo stile della pagina di conferma della nostra prenotazione effettuata con successo
 - controllo-log.css : definiamo lo stile della pagina a cui siamo indirizzati se non abbiamo effettuato l'accesso
 - footer.css : definiamo lo stile del footer del nostro sito

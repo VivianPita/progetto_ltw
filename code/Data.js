@@ -1,3 +1,5 @@
+// Definisco gli elementi che saranno presenti nello shop
+
 let shopItemsData = [
   {
     id: "dreffr",

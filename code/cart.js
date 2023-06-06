@@ -4,13 +4,15 @@ let label = document.getElementById("label");
 
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
+//Funzione per calcolare il numero di un particolare prodotto visualizzato poi nel carrello
 let calculation = () => {
   let cartIcon = document.getElementById("cartAmount");
   cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
 };
-
+//Invoco funzione precedentemente definita
 calculation();
 
+//Funzione per generare i prodotti nella pagina del carrello visualizzando la quantita, il prezzo e il costo del prodotto
 let generateCartItems = () => {
   if (basket.length !== 0) {
     return (ShoppingCart.innerHTML = basket
@@ -50,9 +52,10 @@ let generateCartItems = () => {
     `;
   }
 };
-
+//Invoco la funzione prima definita
 generateCartItems();
 
+//Funzione per incrementare il numero di un particolare prodotto visualizzato poi nel carrello
 let increment = (id) => {
   let selectedItem = id;
   let search = basket.find((x) => x.id === selectedItem.id);
@@ -70,6 +73,7 @@ let increment = (id) => {
   update(selectedItem.id);
   localStorage.setItem("data", JSON.stringify(basket));
 };
+//Funzione per decrementare il numero di un particolare prodotto visualizzato poi nel carrello
 let decrement = (id) => {
   let selectedItem = id;
   let search = basket.find((x) => x.id === selectedItem.id);
@@ -84,7 +88,7 @@ let decrement = (id) => {
   generateCartItems();
   localStorage.setItem("data", JSON.stringify(basket));
 };
-
+//Funzione per aggiornare il numero di un particolare prodotto visualizzato poi nel carrello
 let update = (id) => {
   let search = basket.find((x) => x.id === id);
   // console.log(search.item);
@@ -92,7 +96,7 @@ let update = (id) => {
   calculation();
   TotalAmount();
 };
-
+//Funzione per rimuovere un particolare elemento (non usata alla fine del progetto)
 let removeItem = (id) => {
   let selectedItem = id;
   // console.log(selectedItem.id);
@@ -102,14 +106,14 @@ let removeItem = (id) => {
   TotalAmount();
   localStorage.setItem("data", JSON.stringify(basket));
 };
-
+//Funzione per svuotare il carrello
 let clearCart = () => {
   basket = [];
   generateCartItems();
   calculation();
   localStorage.setItem("data", JSON.stringify(basket));
 };
-
+//Funzione per calcolare il prezzo totale e per permettere all'utente di poter svuotare il carrello o andare al checkout
 let TotalAmount = () => {
   if (basket.length !== 0) {
     let amount = basket
@@ -128,6 +132,6 @@ let TotalAmount = () => {
     `;
   } else return;
 };
-
+//Invocazione funzione definita prima
 TotalAmount();
 

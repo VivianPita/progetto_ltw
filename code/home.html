@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <!--  header gestito con un menu nascosto che appare in base ad una media query, un logo e una navbar con un icona del carrello -->
   <header>
     <input type="checkbox" name="" id="toggler">
 
@@ -31,7 +32,6 @@
   </nav>
 
     <div class="icons">
-      <!--<a href="log.php" class="fas fa-user"></a>-->
       <a href="cart.html" class="fas fa-shopping-cart"></a>
           <div class="cart">
           
@@ -44,7 +44,7 @@
   </div>
 
 </header>
-
+<i class="fa fa-chevron-up"></i> <!-- collegamento per lo scroll up in jquery-->
 <!-- sezione shop-->
 <i class="fa fa-chevron-up"></i>
 <section class="home" id="home">
@@ -62,6 +62,7 @@
       <a href="shop.html" class="btn">Inizia lo shopping</a>
   </div>
 </section>
+
 <!-- sezione prenotazioni visite-->
 <section class="home1" id="home">
 
@@ -78,22 +79,7 @@
       <a href="services.html" class="btn">prenota ora</a> <!-- mettere sistema prenotazioni-->
   </div>
 </section>
-<!-- sezione servizi-->
-<!--<section class="home2" id="home">
 
-  <div class="content">
-
-      <h3>Servizi rapidi</h3>
-
-      <span> Lorem ipsum dolor sit amet.</span>
-
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quam 
-          perspiciatis quos nemo recusandae 
-          voluptatem praesentium exercitationem esse fugit expedita.</p>
-
-      <a href="services.html" class="btn">prenota ora</a>
-  </div>
-</section>-->
 <!--sezione about us-->
 <section class="home3" id="home">
 
@@ -110,25 +96,9 @@
       <a href="about.html" class="btn">leggi di pi&ugrave</a>
   </div>
 </section>
-<!-- sezione animali clinica-->
-<!--<section class="home4" id="home">
 
-  <div class="content">
+<!-- footer gestito con un box container e 3 box  -->
 
-      <h3>I nostri piccoli pazienti</h3>
-
-      <span> Lorem ipsum dolor sit amet.</span>
-
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quam 
-          perspiciatis quos nemo recusandae 
-          voluptatem praesentium exercitationem esse fugit expedita.</p>
-
-      <a href="shop.html" class="btn">shop now</a>
-  </div>
-</section>-->
-
-
-    
 <section class="footer">
 
   <div class="box-container">
@@ -168,6 +138,7 @@
 </section>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <!-- script in jquery per implementare lo scroll up  -->
   <script>
     $(document).ready(function(){
       $(window).scroll(function(){
