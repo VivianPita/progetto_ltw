@@ -28,13 +28,12 @@ Per sviluppare il sito abbiamo usato:
 - Xampp
   - Apache
   - MySQL
- 
- ## Database:
-   -database: progetto_ltw-main
-   -host = "127.0.0.1"
-   -user = "root"
-   -password = ""
-   -tabelle:
+## Database:
+-database: progetto_ltw-main
+-host = "127.0.0.1"
+-user = "root"
+-password = ""
+-tabelle:
             -utenti
             -ordini
             -prenotazioni
