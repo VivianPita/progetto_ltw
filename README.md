@@ -29,14 +29,14 @@ Per sviluppare il sito abbiamo usato:
   - Apache
   - MySQL
 ## Database:
--database: progetto_ltw-main
--host = "127.0.0.1"
--user = "root"
--password = ""
--tabelle:
-            -utenti
-            -ordini
-            -prenotazioni
+- database: progetto_ltw-main
+- host = "127.0.0.1"
+- user = "root"
+- password = ""
+- tabelle:
+  - utenti
+  - ordini
+  - prenotazioni
 
 ## Descrizione cartella code
 Il codice è stato scritto nella cartella code per poi essere suddiviso in due ulteriori cartelle:
