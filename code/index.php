@@ -17,7 +17,7 @@
 </head>
 
 <body>
-
+  <!--  header gestito con un menu nascosto che appare in base ad una media query, un logo e una navbar con un icona del carrelo -->
   <header>
       <input type="checkbox" name="" id="toggler">
 
@@ -50,9 +50,9 @@
 
   </header>
 
-  <!-- sezione shop-->
   <i class="fa fa-chevron-up"></i>
   <section class="index">
+      <!--  form per il passaggio dei dati per la registrazione dell'account -->
       <form action="php/register.php" method="POST">
           <h2>Registrati</h2>
 
@@ -71,10 +71,11 @@
           <button type="submit" value="invia">Invia</button>
           <p></p>
           <p></p>
+          <!--  se si ha già un account si può andare direttamente alla pagina di login -->
           <p>Hai già un account? <a href="log.php">Accedi</a></p>
       </form>
   </section>
-
+  <!-- footer gestito con un box container e 4 box  -->
   <section class="footer">
 
       <div class="box-container">
