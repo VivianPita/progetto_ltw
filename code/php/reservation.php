@@ -7,7 +7,7 @@ $numero = $connessione->real_escape_string($_POST["numero"]);
 $data = $connessione->real_escape_string($_POST["data"]);
 $ora = $connessione->real_escape_string($_POST["ora"]);
 
-// Ottiene i valori dai campi del modulo di prenotazione e li protegge da eventuali attacchi di SQL injection utilizzando il metodo real_escape_string()
+// Ottiene i valori dai campi del modulo di prenotazione
 
 $sql = "INSERT INTO prenotazioni (nome, numero, data, ora) VALUES ('$nome', '$numero', '$data', '$ora')";
 
