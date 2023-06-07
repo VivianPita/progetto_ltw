@@ -65,7 +65,7 @@ if(!isset($_SESSION['loggato']) || $_SESSION['loggato'] !== true){
                     </div>
                     <div class="mb-3 mt-3">
                       <label for="uname" class="form-label">CAP:</label>
-                      <input type="text" class="form-control" id="uname" placeholder="00000" name="cap" required>
+                      <input type="text" class="form-control" id="uname" placeholder="00000" name="cap" pattern=".{5}" required>
                       <div class="valid-feedback">Valido</div>
                       <div class="invalid-feedback">Riempi questo campo</div>
                     </div>
@@ -104,7 +104,7 @@ if(!isset($_SESSION['loggato']) || $_SESSION['loggato'] !== true){
                     </div>
                     <div class="mb-3 mt-3">
                     <label for="uname" class="form-label">CVV:</label>
-                    <input type="text" class="form-control" id="uname" placeholder="000" name="uname" required>
+                    <input type="text" class="form-control" id="uname" placeholder="000" name="uname" pattern=".{3}" required>
                     <div class="valid-feedback">Valido</div>
                     <div class="invalid-feedback">Riempi questo campo</div>
                     </div>
