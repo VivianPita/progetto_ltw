@@ -73,7 +73,7 @@ if(isset($_SESSION['loggato']) || $_SESSION['loggato'] == true){
 
 
   <section class="login">
-      
+       <!--form per il passaggio dei dati per il login e il controllo-->
       <form action="php/login.php" method="POST">
         <h2>Accedi</h2>
         
