@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="controllo-log.css">
 </head>
 <body>
-
+    <!--  header gestito con un menu nascosto che appare in base ad una media query, un logo e una navbar con un icona del carrelo -->
     <header>
         <input type="checkbox" name="" id="toggler">
 
@@ -46,13 +46,14 @@
     <i class="fa fa-chevron-up"></i>
 
     <section class="area-privata" id=area-privata>
+      <!--  notifica di avviso di fare prima il login prima di procedere all'operazione -->
       <form action="log.php">
         <h2>Fai il login prima di procedere</h2>
         <div></div>
         <input type="submit" value="Vai al Login" class="submit-btn">
       </form>
     </section>
-
+    <!-- footer gestito con un box container e 4 box  -->
     <section class="footer">
 
         <div class="box-container">
