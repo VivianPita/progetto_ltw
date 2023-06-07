@@ -2,7 +2,8 @@
 
 session_start();
 if(!isset($_SESSION['loggato']) || $_SESSION['loggato'] !== true){
-
+    // Verifica se la sessione non è stata avviata o se 'loggato' non è impostato a true
+    // In tal caso, reindirizza l'utente alla pagina di accesso e termina l'esecuzione dello script
     header("location: controllo-log.php");
     exit;
 
