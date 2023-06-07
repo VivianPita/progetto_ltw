@@ -1,27 +1,28 @@
 <?php
-
+// Inizio sessione PHP
 session_start();
 
+// Configurazione per visualizzare gli errori
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-
+// Verifica se è presente un messaggio di errore nella sessione
 if (isset($_SESSION['errore'])) {
-  echo "<p>" . $_SESSION['errore'] . "</p>";
-  unset($_SESSION['errore']);
+  echo "<p>" . $_SESSION['errore'] . "</p>"; // Stampa il messaggio di errore
+  unset($_SESSION['errore']); // Rimuove il messaggio di errore dalla sessione
 }
 
+// Verifica se l'utente è già loggato o se la variabile di sessione è impostata su true
 if(isset($_SESSION['loggato']) || $_SESSION['loggato'] == true){
 
-    header("location: area-privata.php");
-    exit;
+    header("location: area-privata.php"); // Reindirizza l'utente all'area privata
+    exit; // Termina l'esecuzione dello script
 
 }
 
-
-
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -72,7 +73,7 @@ if(isset($_SESSION['loggato']) || $_SESSION['loggato'] == true){
 
 
   <section class="login">
-    
+      
       <form action="php/login.php" method="POST">
         <h2>Accedi</h2>
         
