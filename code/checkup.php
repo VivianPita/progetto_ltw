@@ -73,6 +73,7 @@ if(!isset($_SESSION['loggato']) || $_SESSION['loggato'] !== true){
 
         <div class = "card-content">
             <h3>Prenotazione</h3>
+            <!--  form per l'inserimento dei dati della prenotazione -->
             <form action="php/reservation.php" method="POST">
                 <div class = "form-row">
                     
