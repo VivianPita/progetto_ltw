@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-
+//inizio della sessione
 ?>
 <!DOCTYPE html>
 <html>
