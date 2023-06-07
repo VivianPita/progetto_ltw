@@ -26,6 +26,7 @@ if(!isset($_SESSION['loggato']) || $_SESSION['loggato'] !== true){
     <link rel="stylesheet" type="text/css" href="checkup.css">
 </head>
 <body>
+  <!--  header gestito con un menu nascosto che appare in base ad una media query, un logo e una navbar con un icona del carrelo -->
   <header>
     <input type="checkbox" name="" id="toggler">
 
@@ -105,6 +106,7 @@ if(!isset($_SESSION['loggato']) || $_SESSION['loggato'] !== true){
     </div>
 </section>
 
+<!-- footer gestito con un box container e 4 box  -->
 <section class="footer">
 
   <div class="box-container">
