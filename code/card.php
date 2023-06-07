@@ -27,13 +27,13 @@ if(!isset($_SESSION['loggato']) || $_SESSION['loggato'] !== true){
 <body>
 <div class="sopra">
 <div class="container">
-
+     <!--  form per l'inserimento dei dati di spedizione e pagamento -->
     <form action="php/check.php" class= "was-validated "method="POST">
 
         <div class="row">
 
             <div class="col">
-
+                 <!--  dati di spedizione che devono essere tutti inseriti correttamente per essere validati -->
                 <h3 class="title">Dati Spedizione</h3>
 
                 <div class="mb-3 mt-3">
@@ -74,7 +74,7 @@ if(!isset($_SESSION['loggato']) || $_SESSION['loggato'] !== true){
             </div>
 
             <div class="col">
-
+                <!--  dati di pagamento che devono essere tutti inseriti correttamente per essere validati -->
                 <h3 class="title">Pagamento</h3>
 
                 <div class="mb-3 mt-3">
@@ -113,15 +113,15 @@ if(!isset($_SESSION['loggato']) || $_SESSION['loggato'] !== true){
             </div>
     
         </div>
-
+    
         
         <button type="submit" class="submit-btn" value="invia">invia</button>
-
+        
         <script src="card.js"></script>
         <script>
 
             $('.submit-btn').click(() => {
-                
+                <!--  viene svuotato il carrello una volta che è stato completato l'acquisto -->
                 localStorage.clear()
             });
             
