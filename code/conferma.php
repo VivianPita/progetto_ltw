@@ -19,7 +19,7 @@ session_start();
     <link rel="stylesheet" type="text/css" href="conferma.css">
 </head>
 <body>
-
+    <!--  header gestito con un menu nascosto che appare in base ad una media query, un logo e una navbar con un icona del carrelo -->
     <header>
         <input type="checkbox" name="" id="toggler">
 
@@ -49,8 +49,9 @@ session_start();
 
     </header>
     <i class="fa fa-chevron-up"></i>
-
+    
     <section class="conferma">
+        <!--  notifica della corretta prenotazione avvenuta e possibilità di tornare a prenotare i servizi direttamente -->
         <form action="services.html">
             <h3>Prenotazione Confermata</h3>
             <div></div>
@@ -59,7 +60,7 @@ session_start();
             <input type="submit" value="Torna ai servizi" class="submit-btn">
         </form>
     </section>
-
+    <!-- footer gestito con un box container e 4 box  -->
     <section class="footer">
 
         <div class="box-container">
