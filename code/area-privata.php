@@ -73,7 +73,7 @@ if(!isset($_SESSION['loggato']) || $_SESSION['loggato'] !== true){
             <input type="submit" value="Disconnetti" class="submit-btn">
         </form>
     </section>
-
+    <!-- footer gestito con un box container e 4 box  -->
     <section class="footer">
 
         <div class="box-container">
